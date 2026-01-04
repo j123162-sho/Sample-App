@@ -361,7 +361,11 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+<<<<<<< HEAD
   bcrypt (~> 3.1.7)
+=======
+  bcrypt (= 3.1.18)
+>>>>>>> dec308f1a6b9efc09a14dbe13a27dcf7014087e3
   bootsnap (= 1.16.0)
   bootstrap-sass (= 3.4.1)
   capybara (= 3.38.0)
