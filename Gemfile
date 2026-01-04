@@ -14,12 +14,16 @@ gem "stimulus-rails",  "1.2.1"
 gem "jbuilder",        "2.11.5"
 gem "puma",            "5.6.8"
 gem "bootsnap",        "1.16.0", require: false
-gem "sqlite3",         "1.6.1"
 gem "concurrent-ruby", "1.3.4"
-# Gemfile
-gem 'bcrypt', '~> 3.1.7'
 
+# 本番環境（Render）用
+group :production do
+  gem "pg"
+end
+
+# 開発・テスト環境用（SQLite3はここに移動しました）
 group :development, :test do
+  gem "sqlite3", "1.6.1"
   gem 'reline', '0.5.10'
   gem "debug",   "1.7.1", platforms: %i[ mri mingw x64_mingw ]
 end
@@ -41,6 +45,3 @@ group :test do
   gem "guard",                    "2.18.0"
   gem "guard-minitest",           "2.4.6"
 end
-
-# Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります
-# gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
