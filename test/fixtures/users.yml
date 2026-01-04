@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  email: MyString
+
+two:
+  name: MyString
+  email: MyString
+=======
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+>>>>>>> dec308f1a6b9efc09a14dbe13a27dcf7014087e3
